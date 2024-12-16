@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleva's Confectionery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+        }
+        header {
+            background-color: #ffd9d9;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        header h1 {
+            color: #b34747;
+            margin: 0;
+            flex-grow: 1;
+        }
+        nav {
+            background-color: #fff5e6;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #b34747;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .cta {
+            background-color: #ff6666;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff5e6;
+            text-align: center;
+        }
+        .content h2 {
+            text-align: center;
+            color: #b34747;
+        }
+        .reasons, .testimonials {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+        .reasons p, .testimonials p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff5e6;
+        }
+        .product {
+            border: 1px solid #ffd9d9;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ffd9d9;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="site-logo.png" alt="Cleva's Confectionery Logo">
+        <h1>Cleva's Confectionery</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section class="content">
+        <h2>Delicious Treats Await You!</h2>
+        <p>From the fluffiest cakes to the crunchiest snacks, Cleva's Confectionery has something for everyone.</p>
+        <a href="https://wa.me/your-number" class="cta">Chat with us on WhatsApp</a>
+    </section>
+
+    <section class="content">
+        <h2>Why Choose Us?</h2>
+        <div class="reasons">
+            <p>At Cleva's Confectionery, we pride ourselves on using the finest ingredients to create the most delectable treats. From our fluffy, moist cakes to our flaky pastries, every bite is a celebration of flavor.</p>
+            <p>Our crunchy peanuts and chinchin are perfect for any occasion, and our Fruity Hibiscus Drink (Zobo) offers a refreshing, sugar-free delight that's safe for everyone.</p>
+            <p>Our beautifully curated gift boxes are thoughtfully designed, making them perfect for gifting your loved ones and leaving a lasting impression.</p>
+        </div>
+
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <p><strong>Jane D.:</strong> "Cleva's cakes are simply the best! They made my birthday unforgettable. Highly recommend!"</p>
+            <p><strong>Michael O.:</strong> "I can't get enough of their peanuts and chinchin. They're so crunchy and tasty!"</p>
+            <p><strong>Sophia A.:</strong> "The Zobo drink is a game changer. I love how it's all-natural and so refreshing!"</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="cake1.jpg" alt="Cake">
+            <p>Fluffy Cake</p>
+        </div>
+        <div class="product">
+            <img src="pastry1.jpg" alt="Pastry">
+            <p>Delicious Pastry</p>
+        </div>
+        <div class="product">
+            <img src="peanuts.jpg" alt="Peanuts">
+            <p>Crunchy Peanuts</p>
+        </div>
+        <!-- Add 7 more products here -->
+        <a href="#gallery" class="cta">View More in Our Gallery</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cleva's Confectionery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
