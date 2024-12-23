@@ -95,7 +95,7 @@
     <section class="contact">
         <h2>Contact Us</h2>
         <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
-        <form action="/submit-form" method="post">
+        <form onsubmit="sendToWhatsApp(event)">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -112,5 +112,26 @@
     <footer>
         <p>&copy; 2024 Cleva's Confectionery. All rights reserved. <a href="https://www.binarydigitalhub.com.ng">Designed By Binary Digital Hub</p></a>
     </footer>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get the form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // WhatsApp number
+            const whatsappNumber = "2348170778539";
+
+            // Create the WhatsApp message
+            const whatsappMessage = `Hello Cleva's Confectionery!%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+
+            // Redirect to WhatsApp
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
 </body>
 </html>
